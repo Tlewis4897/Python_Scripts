@@ -5,8 +5,9 @@ class Geometry(object):
     # Task 1 Incrementing Geometry Class
     geoid = 0
     def __init__(self):
-        self.id = self.geoid; self.__class__.geoid += 1
-geo1 = Geometry()
+        self.id = Geometry.geoid
+        Geometry.geoid += 1
+
 
 # Task 2
 class Point(Geometry):
